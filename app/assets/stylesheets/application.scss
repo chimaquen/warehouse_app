@@ -37,6 +37,9 @@ header {
   list-style: none;
   color: white;
   /* font-family: ; */
+  a {
+    color: white;
+  }
 }
 
 .header-list ul li {
@@ -44,45 +47,26 @@ header {
 }
 
 main {
-  background-image: url("../image/transport-4932521_1920.jpg");
+  background-image: url("images/transport-4932521_1920.jpg");
   background-size: cover;
   /* opacity: 0.7; */
   margin: 0;
-  padding-top: 16%;
-  padding-bottom: 18%;
-  padding-right: auto;
-  padding-left: auto;
   width: 100%;
   height: 100%;
-}
-
-.container {
-  margin: 0;
-  padding: 50px auto;
-  /* opacity: 1; */
-}
-
-.form-signup {
-  margin: auto;
-  padding: 10% auto;
-  /* border: solid 1px yellow; */
-  padding: 40px;
-  background-color: rgba(255,255,255,1);
-  /* opacity: 1; */
-  width: 300px;
-  /* height: 600px; */
-  text-align: center;
   
-}
-
-
-.signup {
-  /* width: 150px; */
-  background-color: rgba(128,0,128,1);
-  opacity: 1;
-  border-radius: 4px;
-  color:white;
-  padding: 10px auto;
+  .container {
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+    
+    .view-content {
+      margin: auto;
+      padding: 10% auto;
+      background-color: rgba(255,255,255,1);
+      width: 300px;
+      text-align: center;  
+    }
+  }
 }
 
 footer {
@@ -93,10 +77,12 @@ footer {
   position: absolute;
   bottom: 0;
   z-index: 0;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
 }
 
-footer p {
-  color: white;
-  text-align: center;
-}
 
