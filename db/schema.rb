@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2020_11_08_044916) do
   enable_extension "plpgsql"
 
   create_table "goods", force: :cascade do |t|
-    t.integer "code"
+    t.integer "code", null: false
     t.string "name"
     t.integer "unit_weight"
     t.integer "storage_number"
@@ -24,8 +24,10 @@ ActiveRecord::Schema.define(version: 2020_11_08_044916) do
     t.string "primary_cartons"
     t.integer "current_cartons"
     t.date "in_storage_date"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_goods_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -40,4 +42,5 @@ ActiveRecord::Schema.define(version: 2020_11_08_044916) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "goods", "users"
 end

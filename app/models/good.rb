@@ -1,4 +1,4 @@
 class Good < ApplicationRecord
-    belongs_to :user, dependent: :destroy
-    validates :content, presence: true
+    belongs_to :user
+    validates :code, presence: true
 end
