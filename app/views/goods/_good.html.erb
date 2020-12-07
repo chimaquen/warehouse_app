@@ -1,0 +1,37 @@
+<div>
+  <p>【ユーザー】: <%= current_user.email %></p>
+  <table class="table">
+    <tr>
+      <th>商品コード</th>
+      <th>商品名</th>
+      <th>単量（kg）</th>
+      <th>カートンサイズ</th>
+      <th>仕入先</th>
+      <th>商品イメージ</th>
+      <th>詳細</th>
+      <th>編集</th>
+      <th>削除</th>
+    <tr>
+
+    <tr>
+      <td><%= good.code %></td>
+      <td><%= good.name %></td>
+      <td><%= good.unit_weight %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+        <%= link_to "詳細", "#" %>
+      </td>
+      <td>
+        <%= link_to "編集", edit_good_path(good) %>
+      </td>
+      <td>
+        <%= link_to "削除", good_path(good), method: :delete, data: { confirm: "削除しますか？" } %>
+      </td>
+    </tr>
+  </table>
+  <p>
+  </p>
+</div>
+<hr>

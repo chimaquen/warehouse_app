@@ -1,0 +1,88 @@
+@import "bootstrap/scss/bootstrap";
+
+$fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/regular";
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: red;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 10px; 
+  position: relative;
+  z-index: 0;
+}
+
+.header-logo {
+  float: left;
+  /* background-color: red; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:white;
+  width: 300px;
+  height: 30px;
+}
+
+.header-list {
+  float: right;
+  margin-right: 20px;
+}
+
+.header-list ul {
+  display: flex;
+  list-style: none;
+  color: white;
+  /* font-family: ; */
+  a {
+    color: white;
+  }
+}
+
+.header-list ul li {
+  padding: 10px;
+}
+
+main {
+  background-image: url("images/transport-4932521_1920.jpg");
+  background-size: cover;
+  /* opacity: 0.7; */
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  
+  .container {
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+    
+    .view-content {
+      margin: auto;
+      padding: 10% auto;
+      background-color: rgba(255,255,255,1);
+      width: 300px;
+      text-align: center;  
+    }
+  }
+}
+
+footer {
+  background-color: red;
+  margin-bottom: 0; 
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+}
+
+
